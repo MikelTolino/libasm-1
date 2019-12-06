@@ -6,7 +6,7 @@
 #    By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/05 14:27:57 by lmartin           #+#    #+#              #
-#    Updated: 2019/12/06 20:15:23 by lmartin          ###   ########.fr        #
+#    Updated: 2019/12/06 21:09:18 by lmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -109,7 +109,7 @@ $(NAME):		$(OBJS)
 				@ranlib $(NAME)
 				@echo "$(_GREEN) Library '$(NAME)' compiled. $(_END)✅"
 
-$(EXEC):		$(MAIN_OBJ)
+$(EXEC):		$(NAME) $(MAIN_OBJ)
 				@$(CC) $(CC_FLAGS) -I $(DIR_HEADERS) $(NAME) $(MAIN_OBJ) -o $(EXEC)
 				@echo "$(_GREEN) Executable '$(EXEC)' created. $(_END)✅"
 
@@ -152,7 +152,7 @@ re_bonus:		fclean bonus
 
 # EXEC #
 
-exec:			all $(EXEC)
+exec:			$(EXEC)
 
 
 # PHONY #

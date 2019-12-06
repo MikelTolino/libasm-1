@@ -6,7 +6,7 @@
 /*   By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 23:25:43 by lmartin           #+#    #+#             */
-/*   Updated: 2019/12/06 19:37:36 by lmartin          ###   ########.fr       */
+/*   Updated: 2019/12/06 21:10:45 by lmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,26 +16,15 @@
 
 void		test_ft_strcpy()
 {
-	char	*src;
-	char	*dst;
+	char	dst[100];
 
 	printf("ft_strcpy :\n");
-	dst = "";
-	src = "";
-	printf("	empty_string ");
-	printf("'%s'", src);
-	dst = ft_strcpy(dst, src);
-	printf("- %s\n", dst);
-	src = "toto";
-	printf("	toto_string ");
-	printf("'%s'", src);
-	dst = ft_strcpy(dst, src);
-	printf("- %s\n", dst);
-	src = "0123456789";
-	printf("	ten numbers ");
-	printf("'%s'", src);
-	dst = ft_strcpy(dst, src);
-	printf("- %s\n", dst);
+	printf("	empty_string ''");
+	printf("- %s\n", ft_strcpy(dst, ""));
+	printf("	toto_string 'toto'");
+	printf("- %s\n", ft_strcpy(dst, "toto"));
+	printf("	ten numbers '0123456789'");
+	printf("- %s\n", ft_strcpy(dst, "0123456789"));
 }
 
 void		test_ft_strlen()
