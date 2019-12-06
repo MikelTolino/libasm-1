@@ -6,7 +6,7 @@
 /*   By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 23:25:43 by lmartin           #+#    #+#             */
-/*   Updated: 2019/12/06 03:39:18 by lmartin          ###   ########.fr       */
+/*   Updated: 2019/12/06 19:37:36 by lmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,20 +20,21 @@ void		test_ft_strcpy()
 	char	*dst;
 
 	printf("ft_strcpy :\n");
+	dst = "";
 	src = "";
 	printf("	empty_string ");
 	printf("'%s'", src);
-	dst = ft_strcpy(src);
+	dst = ft_strcpy(dst, src);
 	printf("- %s\n", dst);
 	src = "toto";
 	printf("	toto_string ");
 	printf("'%s'", src);
-	dst = ft_strcpy(src);
+	dst = ft_strcpy(dst, src);
 	printf("- %s\n", dst);
 	src = "0123456789";
 	printf("	ten numbers ");
 	printf("'%s'", src);
-	dst = ft_strcpy(src);
+	dst = ft_strcpy(dst, src);
 	printf("- %s\n", dst);
 }
 

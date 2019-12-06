@@ -6,11 +6,11 @@
 ;    By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+         ;
 ;                                                 +#+#+#+#+#+   +#+            ;
 ;    Created: 2019/12/06 00:47:13 by lmartin           #+#    #+#              ;
-;    Updated: 2019/12/06 02:47:40 by lmartin          ###   ########.fr        ;
+;    Updated: 2019/12/06 16:02:07 by lmartin          ###   ########.fr        ;
 ;                                                                              ;
 ; **************************************************************************** ;
 
-section.text
+section.text:
 	global _ft_strlen
 
 _ft_strlen:
