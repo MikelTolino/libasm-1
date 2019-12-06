@@ -6,7 +6,7 @@
 #    By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/05 14:27:57 by lmartin           #+#    #+#              #
-#    Updated: 2019/12/06 20:09:11 by lmartin          ###   ########.fr        #
+#    Updated: 2019/12/06 20:15:23 by lmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -134,11 +134,11 @@ all:			$(NAME)
 clean:
 				@$(RM) $(DIR_OBJS)
 				@$(RM) $(EXEC)
-				@echo "🧹💨 $(_RED)'"$(DIR_OBJS)"' has been deleted. $(_END)✅"
+				@echo "$(_RED)'"$(DIR_OBJS)"' has been deleted. $(_END)🗑️"
 
 fclean:			clean
 				@$(RM) $(NAME)
-				@echo "🧹💨 $(_RED)'"$(NAME)"' has been deleted. $(_END)✅"
+				@echo "$(_RED)'"$(NAME)"' has been deleted. $(_END)🗑️"
 
 re:				fclean all
 
