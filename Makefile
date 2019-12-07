@@ -6,7 +6,7 @@
 #    By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/05 14:27:57 by lmartin           #+#    #+#              #
-#    Updated: 2019/12/07 01:33:03 by lmartin          ###   ########.fr        #
+#    Updated: 2019/12/07 16:21:15 by lmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -79,7 +79,8 @@ SRC			=	ft_strlen.s \
 				ft_strcpy.s \
 				ft_strcmp.s \
 				ft_write.s \
-				ft_read.s
+				ft_read.s \
+				ft_strdup.s
 
 SRCS		=	$(SRC)
 
