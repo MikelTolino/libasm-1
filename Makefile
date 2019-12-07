@@ -6,7 +6,7 @@
 #    By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/05 14:27:57 by lmartin           #+#    #+#              #
-#    Updated: 2019/12/06 21:09:18 by lmartin          ###   ########.fr        #
+#    Updated: 2019/12/07 01:33:03 by lmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -76,7 +76,10 @@ DIR_OBJS	=	./compiled_srcs/
 # FILES #
 
 SRC			=	ft_strlen.s \
-				ft_strcpy.s
+				ft_strcpy.s \
+				ft_strcmp.s \
+				ft_write.s \
+				ft_read.s
 
 SRCS		=	$(SRC)
 
