@@ -8,7 +8,7 @@ libasm is a 42 project about creating a library in assembly language
 make
 ```
 
-## Compile libasm & executable test file
+## Compile libasm & executable
 ```
 make exec
 ```
