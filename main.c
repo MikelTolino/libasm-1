@@ -6,16 +6,20 @@
 /*   By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 23:25:43 by lmartin           #+#    #+#             */
-/*   Updated: 2019/12/07 15:00:47 by lmartin          ###   ########.fr       */
+/*   Updated: 2019/12/07 15:55:16 by lmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 #include "libasm.h"
+
+void		test_ft_strdup()
+{
+
+}
 
 void		test_ft_read()
 {
@@ -201,4 +205,6 @@ int			main(int argc, char *argv[])
 		test_ft_write();
 	if (argc == 1 || !strcmp(argv[1], "ft_read"))
 		test_ft_read();
+	if (argc == 1 || !strcmp(argv[1], "ft_strdup"))
+		test_ft_strdup();
 }
