@@ -6,7 +6,7 @@
 #    By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/05 14:27:57 by lmartin           #+#    #+#              #
-#    Updated: 2019/12/07 17:17:02 by lmartin          ###   ########.fr        #
+#    Updated: 2019/12/07 17:18:13 by lmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -156,7 +156,7 @@ re_bonus:		fclean bonus
 
 # EXEC #
 
-exec:			$(EXEC)
+testlib:		$(EXEC)
 
 
 # PHONY #

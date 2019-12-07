@@ -10,7 +10,7 @@ make
 
 ## Compile libasm & executable
 ```
-make exec
+make testlib
 ```
 
 ## References:
