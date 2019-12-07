@@ -6,13 +6,14 @@
 /*   By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 23:25:43 by lmartin           #+#    #+#             */
-/*   Updated: 2019/12/07 02:25:48 by lmartin          ###   ########.fr       */
+/*   Updated: 2019/12/07 15:00:47 by lmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
 #include <unistd.h>
 #include <string.h>
+#include <sys/stat.h>
 #include <fcntl.h>
 #include "libasm.h"
 
