@@ -6,7 +6,7 @@
 #    By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/12/05 14:27:57 by lmartin           #+#    #+#              #
-#    Updated: 2019/12/07 16:21:15 by lmartin          ###   ########.fr        #
+#    Updated: 2019/12/07 17:17:02 by lmartin          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -84,7 +84,7 @@ SRC			=	ft_strlen.s \
 
 SRCS		=	$(SRC)
 
-MAIN_SRC	=	main.c
+MAIN_SRC	=	testlib.c
 
 
 # COMPILED_SOURCES #
