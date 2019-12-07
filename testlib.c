@@ -6,7 +6,7 @@
 /*   By: lmartin <lmartin@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/12/05 23:25:43 by lmartin           #+#    #+#             */
-/*   Updated: 2019/12/07 17:16:54 by lmartin          ###   ########.fr       */
+/*   Updated: 2019/12/07 20:23:44 by lmartin          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,39 +41,39 @@ void		test_ft_read()
 	ssize_t		ret;
 
 	printf("\x1b[32mft_read:\x1b[0m\n");
-	printf("	\x1b[34m[1]\x1b[0m \x1b[36m'open(\"main.c\", O_RDWR)' '' '0'\x1b[0m\n");
-	fd = open("main.c", O_RDWR);
+	printf("	\x1b[34m[1]\x1b[0m \x1b[36m'open(\"main.c\", O_RDONLY)' '' '0'\x1b[0m\n");
+	fd = open("testlib.c", O_RDONLY);
 	ret = read(fd, buffer, 10);
 	printf("		\x1b[33m<unistd.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
 	close(fd);
-	fd = open("main.c", O_RDWR);
+	fd = open("testlib.c", O_RDONLY);
 	ret = read(fd, buffer, 10);
 	printf("		\x1b[33m<libasm.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
 	close(fd);
-	printf("	\x1b[34m[2]\x1b[0m \x1b[36m'open(\"notes\", O_RDWR)' '' '50'\x1b[0m\n");
-	fd = open("notes", O_RDWR);
+	printf("	\x1b[34m[2]\x1b[0m \x1b[36m'open(\"Makefile\", O_RDONLY)' '' '50'\x1b[0m\n");
+	fd = open("Makefile", O_RDONLY);
 	ret = read(fd, buffer, 50);
-	printf("		\x1b[33m<unistd.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
+	printf("		\x1b[33m<unistd.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 50));
 	close(fd);
-	fd = open("notes", O_RDWR);
+	fd = open("Makefile", O_RDONLY);
 	ret = read(fd, buffer, 50);
-	printf("		\x1b[33m<libasm.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
+	printf("		\x1b[33m<libasm.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 50));
 	close(fd);
-	printf("	\x1b[34m[3]\x1b[0m \x1b[36m'open(\"dontexist\", O_RDWR)' '' '10'\x1b[0m\n");
-	fd = open("dontexist", O_RDWR);
+	printf("	\x1b[34m[3]\x1b[0m \x1b[36m'open(\"dontexist\", O_RDONLY)' '' '10'\x1b[0m\n");
+	fd = open("dontexist", O_RDONLY);
 	ret = read(fd, buffer, 10);
 	printf("		\x1b[33m<unistd.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
 	close(fd);
-	fd = open("dontexist", O_RDWR);
+	fd = open("dontexist", O_RDONLY);
 	ret = read(fd, buffer, 10);
 	printf("		\x1b[33m<libasm.h>\x1b[0m  %zd - %s\n", ret, strncpy(show, buffer, 10));
 	close(fd);
-	printf("	\x1b[34m[4]\x1b[0m \x1b[36m'open(\"main.c\", O_RDWR)' 'NULL' '10'\x1b[0m\n");
-	fd = open("main.c", O_RDWR);
+	printf("	\x1b[34m[4]\x1b[0m \x1b[36m'open(\"testlib.c\", O_RDONLY)' 'NULL' '10'\x1b[0m\n");
+	fd = open("testlib.c", O_RDONLY);
 	ret = read(fd, NULL, 10);
 	printf("		\x1b[33m<unistd.h>\x1b[0m  %zd\n", ret);
 	close(fd);
-	fd = open("main.c", O_RDWR);
+	fd = open("testlib.c", O_RDONLY);
 	ret = read(fd, NULL, 10);
 	printf("		\x1b[33m<libasm.h>\x1b[0m  %zd\n", ret);
 	close(fd);
@@ -197,7 +197,7 @@ void		test_ft_strlen()
 	printf("	\x1b[34m[2]\x1b[0m \x1b[36m'    '\x1b[0m\n");
 	printf("		\x1b[33m<string.h>\x1b[0m  %lu\n", strlen("    "));
 	printf("		\x1b[33m<libasm.h>\x1b[0m  %lu\n", ft_strlen("    "));
-	printf("	\x1b[34m[3]\x1b[0m \x1b[36m''\x1b[0m\n");
+	printf("	\x1b[34m[3]\x1b[0m \x1b[36m'0123456789'\x1b[0m\n");
 	printf("		\x1b[33m<string.h>\x1b[0m  %lu\n", strlen("0123456789"));
 	printf("		\x1b[33m<libasm.h>\x1b[0m  %lu\n", ft_strlen("0123456789"));
 	printf("	\x1b[34m[3]\x1b[0m \x1b[36m'NULL'\x1b[0m\n");
